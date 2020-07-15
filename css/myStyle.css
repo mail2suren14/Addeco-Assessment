@@ -1,0 +1,192 @@
+* 
+{
+    padding: 0;
+	margin:0 ;
+}
+
+body,html
+{
+	font-family: Sans-serif;
+}
+
+.Container 
+{
+  width: 100%;
+  overflow: hidden;
+}
+
+header
+{
+    text-align: center;
+	margin: 0px 0px 10px 0px;
+}
+
+.wrapper 
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #efefef;
+}
+
+
+
+.block-container
+{
+	flex: 0 0 75%;
+	display: flex;
+	flex-wrap: wrap;
+    width: 100%;
+}
+
+.blocks
+{
+	flex: 0 0 33.33%;
+	display: flex;
+    width: 33.33%;
+	font-size: 72px;
+	color: #F5F7F7;
+	align-items: center;
+    justify-content: center;
+}
+
+.blocks:before 
+{
+    content:'';
+    padding-top:100%;
+}
+
+.buttons
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-top: 3%;
+    text-align: center
+}
+
+.button
+{
+	padding: 12px;
+    margin: 10px;
+    background-color: #72C3DC;
+    box-shadow: 0px 3px 3px 1px #2b8ead;
+    border-radius: 5px;
+    width: 70%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+	color:#fff;
+}
+
+.button:active
+{
+    box-shadow: 0px 1px 2px 1px #2b8ead;    
+}
+
+
+
+.blocks_1, .blocks_8
+{
+	background-color: #6f98a8;
+}
+
+.blocks_2, .blocks_4
+{
+	background-color: #2b8ead;
+}
+
+.blocks_3, .blocks_5, .blocks_9
+{
+	background-color: #2f454e;
+}
+
+.blocks_6, .blocks_7
+{
+	background-color: #bfbfbf;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 960px)
+{
+	.wrapper 
+	{
+		width: 100%;
+		flex-direction: column-reverse;
+		background-color: #fff;
+		flex-wrap: nowrap;
+    }
+    
+	header
+	{
+		background-color: #333333;
+		color:#fff;
+        padding: 5px 0;
+    }
+    
+	.block-container 
+	{
+		    flex: 0 0 90%;
+			max-width: 90%;
+			align-items: center;
+			margin: 0 5%;
+    }
+    
+	.blocks 
+	{
+		flex: 0 0 100%;
+		border-left: 20px solid;
+		max-width: calc(100% - 20px);
+		font-size: 20px;
+		color: #000;
+		padding: 10px 0;
+		margin-bottom: 5px;
+		font-weight: normal;
+		background-color: #efefef;		
+    }
+    
+    .blocks_1, .blocks_8
+	{
+		border-color: #6f98a8;
+    }
+    
+	.blocks_2, .blocks_4
+	{
+		border-color: #2b8ead;
+    }
+    
+	.blocks_3, .blocks_5, .blocks_9
+	{
+		border-color: #2f454e;
+    }
+    
+	.blocks_6, .blocks_7
+	{
+		border-color: #bfbfbf;
+	}
+    
+	.blocks:before 
+	{
+		padding-top:0;
+    }
+    
+	.buttons 
+	{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin: 12px 0;
+    }
+    
+	.button 
+	{
+		padding: 15px;
+		margin: 5px;
+		width: 26%;
+    }
+}
+
+footer
+{
+    text-align: center;
+    padding: 20px 0;
+}
